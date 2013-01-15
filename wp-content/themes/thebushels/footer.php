@@ -10,24 +10,24 @@
  */
 ?>
 
-	</div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo">
-
-			<?php
-				/* A sidebar in the footer? Yep. You can can customize
-				 * your footer with three columns of widgets.
-				 */
-				if ( ! is_404() )
-					get_sidebar( 'footer' );
-			?>
-
-			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+<div id="footer">
+	<div class="mid-cont">
+		<div id="signup-cont">
+			<div class="section-title">join our newsletter</div>
+			<?php if ( dynamic_sidebar('sidebar-3') ) : ?><?php endif; ?>
+		</div>
+	</div>
+	<div id="footer-bottom">
+		<div class="mid-cont">
+			<div id="social-cont">
+				<a id="facebook" class="social-icon" target="_blank" href="#"></a>
+				<a id="twitter" class="social-icon" target="_blank" href="#"></a>
+				<a id="itunes" class="social-icon" target="_blank" href="#"></a>
 			</div>
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+			<a id="credits" href="http://www.cobblehilldigital.com" target="_blank">Site by Cobble Hill</a>
+		</div>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 

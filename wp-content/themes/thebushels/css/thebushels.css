@@ -1,0 +1,90 @@
+body {margin:0; padding:0; min-width:1200px; overflow:auto; width:100%; height:100%; background:url(../images/bg.jpg) repeat;}
+a img {border:0;}
+/*#bg-img {position:fixed; top:0px; z-index:-1;}*/
+.bgimg {position:fixed; /*top:0; left:0; */z-index:-1;}
+.cycloneslider {z-index:-1;}
+.section-title {font:normal 32px "proxima-nova-extra-condensed"; font-weight: 700; margin-bottom: 10px; padding-top: 25px; text-transform: uppercase; float:left; width:100%;}
+form input {background: none repeat scroll 0 0 #E4E3E3; border: 0 none; font:normal 20px "museo-sans"; font-weight:700; height:36px; padding:10px; width:300px; float:left;}
+form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border:0 none !important; color:#FFFFFF; cursor:pointer; font:normal 26px "proxima-nova-extra-condensed"; font-weight:700; height:56px; padding:10px; text-align:center; text-transform:uppercase; width:109px;}
+.mid-cont {float:left; width:790px; margin-left:30%;}
+
+/*SPLASH*/
+#splash #nav, #splash #footer {display:none;}
+.wrap {position:absolute; top:0px; width:100%; text-align:center;}
+#splash-wrap {position:absolute;}
+#splash-cont {margin:auto; border:5px solid #1C1819; width:499px; background:#fff; display:inline-block;}
+#splash-logo {background:url(../images/logo.png); width:509px; height:150px; margin:auto;}
+#splash-form {float:left; margin:10px 0;}
+#splash-form input {margin-left:30px;}
+#splash-form input.submit {margin-left:10px; -webkit-appearance: none;}
+#splash #home-link {float:left; font:normal 12px "museo-sans"; margin:10px 0 25px 0; width:100%; color:#000;}
+
+/*NAV*/
+#nav {position:fixed; top:0; left:100px; width:165px; border-left:6px solid #000; background:url(../images/logo.png) no-repeat top left; background-size:165px; z-index:10;}
+#nav .menu {margin:0; padding-left:0px; margin-top:70px; list-style:none;}
+#nav li {margin-bottom:20px; }
+#nav li a {text-decoration:none; color:#000; text-transform:uppercase; font:normal 18px "proxima-nova-extra-condensed"; font-weight:700; padding-left:25px;}
+#nav li a:hover, #nav .current-menu-item  a, #nav .current-page-ancestor a {background:url(../images/nav-hover.jpg) no-repeat 0 2px;}
+#nav #home-link {position:absolute; top:0; left:0; width:165px; height:50px;}
+
+/*MUSIC NAV*/
+#music-nav {float:left; border:6px solid #000; padding:25px 45px 25px 0px; margin-bottom:50px; width:732px;}
+#music-nav .menu {list-style:none; margin:0; padding-left:0px;}
+#music-nav li {float:left; margin-left:100px;}
+#music-nav li a {text-decoration:none; color:#000; text-transform:uppercase; font:normal 22px "proxima-nova-extra-condensed"; font-weight:700;}
+#music-nav li a:hover {text-decoration:underline;}
+
+/*FOOTER*/
+#footer {float:left; width:100%; height:240px; border-top:6px solid #000;}
+#footer #footer-bottom {float:left; height:125px; width:100%; border-top:6px solid #000; background:#575652; margin-top:25px;}
+#footer #social-cont {float:left; margin-top:40px;}
+#footer #social-cont .social-icon {float:left; background:url(../images/social-icons.png) no-repeat; width:90px; height:60px; margin-right:25px;}
+#footer #social-cont .social-icon:hover {background:url(../images/social-icons-hover.png) no-repeat;}
+#footer #social-cont #facebook {background-position:-25% 25%;}
+#footer #social-cont #facebook:hover {background-position:-10%;}
+#footer #social-cont #twitter {background-position:46%;}
+#footer #social-cont #twitter:hover {background-position:50%;}
+#footer #social-cont #itunes {background-position:110%;}
+#footer #social-cont #itunes:hover {background-position:108%;}
+#footer #credits {float:right; width:125px; height:20px; padding:20px 65px 20px 55px; background:#1b1b1b; text-align:center; font:normal 12px "museo-sans"; font-weight:700; color:#fff; text-decoration:none;}
+
+/*NEWSLETTER SIGNUP*/
+#signup-cont, #signup-cont aside, #signup-cont form, #signup-cont .af-standards {float:left; width:100% !important;}
+#signup-cont .section-title {margin-bottom:25px;}
+#signup-cont h3 {display:none;}
+#signup-cont .af-form {float:left; background:none; border:none; width:100%;}
+#signup-cont .af-body, #signup-cont .af-element {padding:0 !important; width:530px;}
+#signup-cont .af-element {float:left;}
+#signup-cont .af-textWrap {float:left; width:530px !important;}
+#signup-cont .af-textWrap input {width:480px; height:40px; padding:15px 25px !important; border:none !important; background:#e3e2e2 !important; font:normal 22px "museo-sans" !important; font-weight:700;}
+#signup-cont .buttonContainer {float:left; margin-left:15px; width:242px !important; text-align:left; background:#000;}
+#signup-cont .buttonContainer input {width:235px; height:70px; background:#000 !important; color:#fff; padding:0;}
+#signup-cont .buttonContainer input.submit {width:100% !important; font:normal 32px "proxima-nova-extra-condensed" !important; font-weight:700; -webkit-appearance: none;}
+
+/*HOME*/
+#home .ngg-galleryoverview {float:left; width:100%; height:600px; margin:0; margin-bottom:45px;}
+#home .ngg-slideshow, #home .ngg-slideshow img {width:100% !important;}
+#home .slideshowlink {display:none;}
+#home #home-cont .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase;}
+#home #home-cont .image {float:left; margin:0 25px 25px 0;}
+#home #home-cont .text {float:left; width:475px;color:#1c1819; font: normal 18px "museo-sans"; min-height:230px;}
+
+@media only screen  and (min-width: 1200px) { 
+/*#home .ngg-galleryoverview,	#home .ngg-slideshow, #home .ngg-slideshow img {height:900px;}*/
+}
+
+@media only screen and (max-device-width : 480px) {
+.cycloneslider {display:none;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
