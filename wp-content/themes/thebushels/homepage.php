@@ -10,10 +10,18 @@ get_header(); ?>
 		<div id="home-cont">
 			<div class="title"><?php the_field('title'); ?></div>
 			<div class="image"><?php the_post_thumbnail('full'); ?></div>
-			<div class="text"><?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?><?php the_content(); ?><?php endwhile; ?><?php endif; ?></div>
+			
+			<div id="text-cont">
+				<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
+					<div id="quote"></div>
+					<div class="text">
+						<?php the_content(); ?>
+					</div>
+				<?php endwhile; ?><?php endif; ?>
+			</div>
 			
 		</div>
-		<div id="music-nav"><?php wp_nav_menu( array( 'menu' => 'music-links' )); ?></div>
+		<div id="music-nav"><?php wp_nav_menu( array( 'menu' => 'wood-and-steel' )); ?></div>
 	</div>
 
 		

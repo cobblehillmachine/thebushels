@@ -7,6 +7,7 @@ a img {border:0;}
 form input {background: none repeat scroll 0 0 #E4E3E3; border: 0 none; font:normal 20px "museo-sans"; font-weight:700; height:36px; padding:10px; width:300px; float:left;}
 form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border:0 none !important; color:#FFFFFF; cursor:pointer; font:normal 26px "proxima-nova-extra-condensed"; font-weight:700; height:56px; padding:10px; text-align:center; text-transform:uppercase; width:109px;}
 .mid-cont {float:left; width:790px; margin-left:30%;}
+#main-title {font:normal 62px "proxima-nova-extra-condensed"; font-weight: 700; margin:100px 0 50px 0;float:left; width:100%;}
 
 /*SPLASH*/
 #splash #nav, #splash #footer {display:none;}
@@ -65,9 +66,43 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #home .ngg-galleryoverview {float:left; width:100%; height:600px; margin:0; margin-bottom:45px;}
 #home .ngg-slideshow, #home .ngg-slideshow img {width:100% !important;}
 #home .slideshowlink {display:none;}
-#home #home-cont .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase;}
+#home #home-cont .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; margin-bottom:25px;}
 #home #home-cont .image {float:left; margin:0 25px 25px 0;}
-#home #home-cont .text {float:left; width:475px;color:#1c1819; font: normal 18px "museo-sans"; min-height:230px;}
+#home #text-cont {float:left; width:475px; min-height:230px;}
+#home #home-cont .text {float:left; width:400px; color:#1c1819; font: normal 18px "museo-sans"; font-weight:300; margin:10px 0 0 20px;}
+#home #home-cont .text strong {font-weight:bold !important;}
+#home #quote {float:left; background:url(../images/big-quote.png) no-repeat; width:53px; height:210px;}
+
+
+/*BLOG*/
+.blog .blog-post {float:left; width:515px; border:6px solid #000; border-bottom:none; border-left:none; padding:40px 30px 30px 0; font-family:"museo-sans" ; font-weight:700; color:#1c1819;}
+.blog .blog-post.first {border-top:none; padding-top:0;}
+.blog-post .section-title {padding:0; margin:0;}
+.blog-post .post-date {font-size:16px;}
+.blog-post .post-text {font-size:14px;}
+#nav-below {float:left; width:525px; font:normal 14px "museo-sans"; font-weight:700; border-top:6px solid #000; border-right:6px solid #000; padding:35px 20px 35px 0;}
+#nav-below a {color:#1c1819; text-decoration:none;}
+#nav-below a:hover {text-decoration:underline;}
+#nav-below .nav-previous {float:left;}
+#nav-below .nav-next {float:right;}
+
+/*BLOG SIDEBAR*/
+#album-cont {float:right; width:235px;}
+#album-cont .section-title {padding-top:0; padding-left:10px;}
+#album-cont aside {float:left; margin:5px 0 15px 15px;}
+#album-cont #music-nav {width:150px; padding:30px 25px 10px 25px; margin-left:15px;}
+#album-cont #music-nav li {margin:0 0 20px 0;}
+
+/*CALENDAR*/
+#calendar .mid-cont {margin-bottom:45px;}
+#calendar .event-post {float:left; width:100%; height:140px; margin-bottom:1px; color:#42413d; font-family:"museo-sans" ; font-weight:700}
+#calendar .date-block {float:left; /*background:#42413d;*/ width:140px; height:140px; text-align:center; background:url(../images/date-sep.png) no-repeat center center #42413d;}
+#calendar .short-date {color:#fff; font:normal 25px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; width:25px; float:left;}
+#calendar .event-block {float:left; width:590px; height:80px; background:#e4e3e3; /*opacity:.7; filter:alpha(opacity=70);*/ padding:30px;}
+#calendar .even .event-block {background:none;}
+#calendar .full-date {float:left; width:100%; font-size:16px;}
+#calendar .event-title {font:normal 32px "proxima-nova-extra-condensed"; font-weight: 700; text-transform: uppercase; float:left; width:100%;}
+
 
 @media only screen  and (min-width: 1200px) { 
 /*#home .ngg-galleryoverview,	#home .ngg-slideshow, #home .ngg-slideshow img {height:900px;}*/

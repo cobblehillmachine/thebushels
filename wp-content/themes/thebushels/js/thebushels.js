@@ -1,6 +1,12 @@
 $(document).ready(function() {
 	fullScreen();
 	centerItem('#splash-wrap', 509, 368);
+	$('.blog-post').eq(0).addClass('first').end();
+	$('.event-post').each(function(i) {
+		if ((i + 1) % 2 == 0) {
+			$(this).addClass('even');
+		}
+	});
 });
 
 

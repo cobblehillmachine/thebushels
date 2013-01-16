@@ -164,6 +164,34 @@ function create_initial_post_types() {
 }
 add_action( 'init', 'create_initial_post_types', 0 ); // highest priority
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+
+	$args1 = array(
+		'labels' => array(
+			'name' => __( 'Calendar' ),
+			'singular_name' => __( 'Calendar' )
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'calendar'),
+		'supports' => array( 'title', 'editor', 'thumbnail' )
+	);
+  
+  register_post_type( 'calendar', $args1);
+  
+	register_taxonomy_for_object_type('post_tag', 'calendar');
+	
+	register_taxonomy_for_object_type('category', 'calendar');
+	
+	register_taxonomy_for_object_type('post_tag', 'page');
+	register_taxonomy_for_object_type('category', 'page');
+	
+	
+}
+add_theme_support( 'post-thumbnails', array( 'post' , 'page' ) ); // Add it for posts
+
+
 /**
  * Retrieve attached file path based on attachment ID.
  *
