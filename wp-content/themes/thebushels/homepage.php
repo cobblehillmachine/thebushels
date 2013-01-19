@@ -14,7 +14,7 @@ get_header(); ?>
 			<div id="text-cont">
 				<?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 					<div id="quote"></div>
-					<div class="text">
+					<div class="content-text">
 						<?php the_content(); ?>
 					</div>
 				<?php endwhile; ?><?php endif; ?>

@@ -7,12 +7,14 @@ a img {border:0;}
 form input {background: none repeat scroll 0 0 #E4E3E3; border: 0 none; font:normal 20px "museo-sans"; font-weight:700; height:36px; padding:10px; width:300px; float:left;}
 form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border:0 none !important; color:#FFFFFF; cursor:pointer; font:normal 26px "proxima-nova-extra-condensed"; font-weight:700; height:56px; padding:10px; text-align:center; text-transform:uppercase; width:109px;}
 .mid-cont {float:left; width:790px; margin-left:30%;}
-#main-title {font:normal 62px "proxima-nova-extra-condensed"; font-weight: 700; margin:100px 0 50px 0;float:left; width:100%;}
+#main-title {font:normal 62px "proxima-nova-extra-condensed"; font-weight: 700; margin:100px 0 50px 0;float:left; width:100%; text-transform: uppercase;}
+#quote {float:left; background:url(../images/big-quote.png) no-repeat; width:53px; height:210px;}
+
 
 /*SPLASH*/
-#splash #nav, #splash #footer {display:none;}
+#splash #nav, #splash #footer-top, #splash #footer-bottom {display:none;}
 .wrap {position:absolute; top:0px; width:100%; text-align:center;}
-#splash-wrap {position:absolute;}
+#splash-wrap {position:absolute; text-align:center;}
 #splash-cont {margin:auto; border:5px solid #1C1819; width:499px; background:#fff; display:inline-block;}
 #splash-logo {background:url(../images/logo.png); width:509px; height:150px; margin:auto;}
 #splash-form {float:left; margin:10px 0;}
@@ -22,11 +24,12 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 
 /*NAV*/
 #nav {position:fixed; top:0; left:100px; width:165px; border-left:6px solid #000; background:url(../images/logo.png) no-repeat top left; background-size:165px; z-index:10;}
-#nav .menu {margin:0; padding-left:0px; margin-top:70px; list-style:none;}
+#nav .menu {margin:0; padding:20px 0 0 0px; margin-top:50px; list-style:none; float:left; width:100%; background:url(../images/white-transparent.png) repeat;}
 #nav li {margin-bottom:20px; }
 #nav li a {text-decoration:none; color:#000; text-transform:uppercase; font:normal 18px "proxima-nova-extra-condensed"; font-weight:700; padding-left:25px;}
 #nav li a:hover, #nav .current-menu-item  a, #nav .current-page-ancestor a {background:url(../images/nav-hover.jpg) no-repeat 0 2px;}
 #nav #home-link {position:absolute; top:0; left:0; width:165px; height:50px;}
+#nav .menu-thebushels-container { }
 
 /*MUSIC NAV*/
 #music-nav {float:left; border:6px solid #000; padding:25px 45px 25px 0px; margin-bottom:50px; width:732px;}
@@ -36,18 +39,18 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #music-nav li a:hover {text-decoration:underline;}
 
 /*FOOTER*/
-#footer {float:left; width:100%; height:240px; border-top:6px solid #000;}
-#footer #footer-bottom {float:left; height:125px; width:100%; border-top:6px solid #000; background:#575652; margin-top:25px;}
-#footer #social-cont {float:left; margin-top:40px;}
-#footer #social-cont .social-icon {float:left; background:url(../images/social-icons.png) no-repeat; width:90px; height:60px; margin-right:25px;}
-#footer #social-cont .social-icon:hover {background:url(../images/social-icons-hover.png) no-repeat;}
-#footer #social-cont #facebook {background-position:-25% 25%;}
-#footer #social-cont #facebook:hover {background-position:-10%;}
-#footer #social-cont #twitter {background-position:46%;}
-#footer #social-cont #twitter:hover {background-position:50%;}
-#footer #social-cont #itunes {background-position:110%;}
-#footer #social-cont #itunes:hover {background-position:108%;}
-#footer #credits {float:right; width:125px; height:20px; padding:20px 65px 20px 55px; background:#1b1b1b; text-align:center; font:normal 12px "museo-sans"; font-weight:700; color:#fff; text-decoration:none;}
+#footer-top {float:left; width:100%; height:180px; border-top:6px solid #000;}
+#footer-bottom {float:left; height:125px; width:100%; border-top:6px solid #000; background:#575652; /*margin-top:25px;*/}
+#footer-bottom #social-cont {float:left; margin-top:40px;}
+#footer-bottom .social-icon {float:left; background:url(../images/social-icons2.png) no-repeat; width:90px; height:60px; margin-right:25px;}
+#footer-bottom .social-icon:hover {background:url(../images/social-icons-hover.png) no-repeat;}
+#footer-bottom #facebook {background-position:-25% 25%;}
+#footer-bottom #facebook:hover {background-position:-10%;}
+#footer-bottom #twitter {background-position:46%;}
+#footer-bottom #twitter:hover {background-position:50%;}
+#footer-bottom #itunes {background-position:110%;}
+#footer-bottom #itunes:hover {background-position:108%;}
+#footer-bottom #credits {float:right; width:125px; height:20px; padding:25px 65px 15px 55px; background:#1b1b1b; text-align:center; font:normal 12px "museo-sans"; font-weight:700; color:#fff; text-decoration:none; margin-top:65px;}
 
 /*NEWSLETTER SIGNUP*/
 #signup-cont, #signup-cont aside, #signup-cont form, #signup-cont .af-standards {float:left; width:100% !important;}
@@ -62,16 +65,48 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #signup-cont .buttonContainer input {width:235px; height:70px; background:#000 !important; color:#fff; padding:0;}
 #signup-cont .buttonContainer input.submit {width:100% !important; font:normal 32px "proxima-nova-extra-condensed" !important; font-weight:700; -webkit-appearance: none;}
 
-/*HOME*/
-#home .ngg-galleryoverview {float:left; width:100%; height:600px; margin:0; margin-bottom:45px;}
+/*HOME*/ /*MUSIC*/
+#home .ngg-galleryoverview {float:left; width:100%; height:600px; margin-top:0; margin-bottom:45px;}
 #home .ngg-slideshow, #home .ngg-slideshow img {width:100% !important;}
 #home .slideshowlink {display:none;}
-#home #home-cont .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; margin-bottom:25px;}
-#home #home-cont .image {float:left; margin:0 25px 25px 0;}
-#home #text-cont {float:left; width:475px; min-height:230px;}
-#home #home-cont .text {float:left; width:400px; color:#1c1819; font: normal 18px "museo-sans"; font-weight:300; margin:10px 0 0 20px;}
-#home #home-cont .text strong {font-weight:bold !important;}
-#home #quote {float:left; background:url(../images/big-quote.png) no-repeat; width:53px; height:210px;}
+#home .title, #music .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; margin-bottom:25px;}
+#home .image, #music .image {float:left; margin:0 25px 25px 0;}
+#home #text-cont, #music #text-cont {float:left; width:475px; min-height:230px;}
+#home .content-text, #music .content-text {float:left; width:400px; color:#1c1819; font: normal 18px "museo-sans"; font-weight:300; margin:10px 0 0 20px;}
+#home .text strong, #music .text strong {font-weight:bold !important;}
+
+/*MUSIC*/
+#music .title {margin-top:100px;}
+#music .image {margin-right:20px;}
+#music #text-cont {width:320px;}
+#music .content-text {margin-left:15px; width:250px;}
+#music #quote {min-height:400px;}
+#music .past-cont {width:745px; height:235px; padding:30px; background:#d5d4d4; float:left; margin-bottom:45px;}
+#music .album-cover {float:left; margin-right:20px;}
+#music .album-cover img {width:235px; height:235px;}
+#music .album-info-cont {float:left; width:245px; font:normal 16px "museo-sans"; font-weight:700; color:#1c1819; margin-right:20px;}
+#music .album-title {font-size:32px; text-transform:uppercase; float:left; width:100%;}
+#music .year {float:left; width:100%; margin-bottom:20px;}
+#music .album-links-cont {width:145px; height:165px; border:6px solid #000; float:left; padding:25px;}
+#music .album-links-cont .music-links {float:left; margin:5px 0 25px 0; color:#1c1819; width:100%; font:normal 22px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; text-decoration:none;}
+#music .album-links-cont .music-links:hover {text-decoration:underline;}
+#music #music-nav {margin-bottom:0;}
+
+/*GALLERY*/
+#gallery .ngg-galleryoverview {margin-top:0; height:700px; width:100%;}
+#gallery .ngg-slideshow {width:100% !important; height:100% !important;}
+#gallery .ngg-slideshow img {width:100% !important; height:100%;}
+#gallery .slideshowlink {display:none;}
+#gallery #about-jcarousel_container {float:left; margin:auto; width:100%;}
+#gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-next-horizontal {top:35px !important; right:-10px;}
+#gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-prev-horizontal {top:35px !important;}
+#gallery .jcarousel-item img {width:60px !important; height:59px !important; border:3px solid #000; cursor:pointer;}
+#gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-clip-horizontal {width:100% !important; height:65px !important;}
+#gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-container-horizontal {width:100% !important;}
+#gallery .thumb-cont {width:1000px; margin:auto;}
+#gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-item {width:63px !important; height:65px !important; margin-right:20px;}
+#gallery #about-jcarousel {height:65px !important;}
+#gallery .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, #gallery .jcarousel-skin-tango .jcarousel-next-horizontal:hover {background-position: 0 0 !important;}
 
 
 /*BLOG*/
@@ -94,15 +129,20 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #album-cont #music-nav li {margin:0 0 20px 0;}
 
 /*CALENDAR*/
-#calendar .mid-cont {margin-bottom:45px;}
+#calendar #footer-top {margin-top:45px;}
 #calendar .event-post {float:left; width:100%; height:140px; margin-bottom:1px; color:#42413d; font-family:"museo-sans" ; font-weight:700}
 #calendar .date-block {float:left; /*background:#42413d;*/ width:140px; height:140px; text-align:center; background:url(../images/date-sep.png) no-repeat center center #42413d;}
-#calendar .short-date {color:#fff; font:normal 25px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; width:25px; float:left;}
+#calendar .short-date {color:#fff; font:normal 28px "crete-rounded-web"; font-weight:700; text-transform:uppercase; width:25px; float:left; margin:32px 0 0 55px;}
 #calendar .event-block {float:left; width:590px; height:80px; background:#e4e3e3; /*opacity:.7; filter:alpha(opacity=70);*/ padding:30px;}
 #calendar .even .event-block {background:none;}
 #calendar .full-date {float:left; width:100%; font-size:16px;}
 #calendar .event-title {font:normal 32px "proxima-nova-extra-condensed"; font-weight: 700; text-transform: uppercase; float:left; width:100%;}
 
+/*CONTACT*/
+#contact-cont {float:left; width:515px; border-right:6px solid #000; padding:40px 30px 30px 0; font-family:"museo-sans" ; font-weight:700; color:#1c1819; min-height:465px;}
+#contact-cont strong {font:normal 32px "proxima-nova-extra-condensed"; font-weight: 700; text-transform: uppercase; float:left; width:100%;}
+#contact-cont a {text-decoration:none; color:#1c1819;}
+#contact-cont a:hover {text-decoration:underline;}
 
 @media only screen  and (min-width: 1200px) { 
 /*#home .ngg-galleryoverview,	#home .ngg-slideshow, #home .ngg-slideshow img {height:900px;}*/
@@ -110,6 +150,8 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 
 @media only screen and (max-device-width : 480px) {
 .cycloneslider {display:none;}
+body {min-height:1400px;}
+#splash-wrap {left:350px !important; top:400px !important;}
 	
 }
 
