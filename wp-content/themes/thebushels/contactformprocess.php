@@ -1,9 +1,4 @@
-<?php
- /*
-Template Name: Download
-*/
 
-get_header(); ?>
 <?php
 
 /* Subject and Email Variables */

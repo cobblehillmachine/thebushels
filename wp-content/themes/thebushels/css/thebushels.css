@@ -18,9 +18,18 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #splash-cont {margin:auto; border:5px solid #1C1819; width:499px; background:#fff; display:inline-block;}
 #splash-logo {background:url(../images/logo.png); width:509px; height:150px; margin:auto;}
 #splash-form {float:left; margin:10px 0;}
-#splash-form input {margin-left:30px;}
-#splash-form input.submit {margin-left:10px; -webkit-appearance: none;}
+#splash-cont #signup-cont .af-body, #splash-cont #signup-cont .af-element {width:350px;}
+#splash-cont #signup-cont .af-textWrap input {margin-left:30px; width:300px; height:36px; padding:10px !important;}
+#splash-cont #signup-cont input.submit {margin-left:10px; -webkit-appearance: none; width:109px; height:56px; padding:10px 10px 10px 2px; font-size:26px !important;}
+#splash-cont #signup-cont .buttonContainer {width:100px !important;}
 #splash #home-link {float:left; font:normal 12px "museo-sans"; margin:10px 0 25px 0; width:100%; color:#000;}
+
+/*DOWNLOAD*/
+#download #wrapper {width:311px; margin:40px auto; background-color:#FFF; padding-top:265px; background-image:url(/wp-content/themes/thebushels/images/formBACKaged.gif); background-repeat:no-repeat; height:375px;}
+#download #wrapper p{font-size:.8625em; font-family:Georgia, "Times New Roman", Times, serif; line-height:1.35em; margin:5px 0 25px 0; color:#FFF; margin:0 65px; text-align:center;}
+#download #wrapper a {color:#C53907; text-decoration:none;}
+#download #wrapper a:hover {color:#F89922; text-decoration:none;}
+#download #footer-top {display:none;}
 
 /*NAV*/
 #nav {position:fixed; top:0; left:100px; width:165px; border-left:6px solid #000; background:url(../images/logo.png) no-repeat top left; background-size:165px; z-index:10;}
@@ -93,10 +102,10 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #music #music-nav {margin-bottom:0;}
 
 /*GALLERY*/
-#gallery .ngg-galleryoverview {margin-top:0; height:700px; width:100%;}
-#gallery .ngg-slideshow {width:100% !important; height:100% !important;}
-#gallery .ngg-slideshow img {width:100% !important; height:100%;}
-#gallery .slideshowlink {display:none;}
+#gallery .galleryview {margin-top:0; height:700px; width:100% !important;}
+#gallery .galleryview .panel {width:100% !important;}
+#gallery .galleryview .panel img {width:100% !important; height:100%; left:0 !important;}
+/*#gallery .slideshowlink {display:none;}
 #gallery #about-jcarousel_container {float:left; margin:auto; width:100%;}
 #gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-next-horizontal {top:35px !important; right:-10px;}
 #gallery div#about-jcarousel_container .jcarousel-skin-tango .jcarousel-prev-horizontal {top:35px !important;}
@@ -108,7 +117,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #gallery #about-jcarousel {height:65px !important;}
 #gallery .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, #gallery .jcarousel-skin-tango .jcarousel-next-horizontal:hover {background-position: 0 0 !important;}
 
-
+*/
 /*BLOG*/
 .blog .blog-post {float:left; width:515px; border:6px solid #000; border-bottom:none; border-left:none; padding:40px 30px 30px 0; font-family:"museo-sans" ; font-weight:700; color:#1c1819;}
 .blog .blog-post.first {border-top:none; padding-top:0;}
