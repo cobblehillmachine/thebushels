@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// $('#splash img').each(function() {
 	// 	$(this).addClass('bgimg');
 	// });
+	$('#splash-wrap').delay(500).fadeIn('fast');
 	centerItem('#splash-wrap', 509, 368);
 	fullScreen();
 	//setImageWidth();

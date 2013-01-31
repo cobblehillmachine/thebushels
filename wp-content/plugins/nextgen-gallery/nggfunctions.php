@@ -118,7 +118,7 @@ function nggShow_JS_Slideshow($galleryID, $width, $height, $class = 'ngg-slidesh
     $width  = (int) $width;
     $height = (int) $height;
 
-    $out  = '<div id="' . $anchor . '" class="' . $class . '" style="height:' . $height . 'px;width:' . $width . 'px;">';
+    $out  = '<div id="' . $anchor . '" class="' . $class . '" style="">';
     $out .= "\n". '<div id="' . $anchor . '-loader" class="ngg-slideshow-loader" style="height:' . $height . 'px;width:' . $width . 'px;">';
     //$out .= "\n". '<img src="'. NGGALLERY_URLPATH . 'images/loader.gif" alt="" />';
     $out .= "\n". '</div>';
@@ -202,7 +202,7 @@ function nggShowGallery( $galleryID, $template = '', $images = false ) {
         if ( $show == 'slide' ) {
             $args['show'] = "gallery";
             $out  = '<div class="ngg-galleryoverview">';
-            $out .= '<div class="slideshowlink"><a class="slideshowlink" href="' . $nggRewrite->get_permalink($args) . '">'.nggGallery::i18n($ngg_options['galTextGallery']).'</a></div>';
+            //$out .= '<div class="slideshowlink"><a class="slideshowlink" href="' . $nggRewrite->get_permalink($args) . '">'.nggGallery::i18n($ngg_options['galTextGallery']).'</a></div>';
             $out .= nggShowSlideshow($galleryID, $ngg_options['irWidth'], $ngg_options['irHeight']);
             $out .= '</div>'."\n";
             $out .= '<div class="ngg-clear"></div>'."\n";

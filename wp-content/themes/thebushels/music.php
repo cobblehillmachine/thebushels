@@ -20,7 +20,11 @@ get_header(); ?>
 		</div>
 		
 	</div>
-	<div id="music-nav"><?php wp_nav_menu( array( 'menu' => 'wood-and-steel' )); ?></div>
+	<div id="music-nav">
+		<a target="_blank" href="<?php the_field('itunes'); ?>">buy on itunes</a>
+		<a target="_blank" href="<?php the_field('amazon'); ?>">buy on amazon</a>
+		<a target="_blank" href="<?php the_field('spotify'); ?>">listen on spotify</a>		
+	</div>
 	<div class="title">past albums</div>
 		<?php $subs = new WP_Query( array( 'post_parent' => $post->ID, 'post_type' => 'page', 'order' => 'ASC', 'meta_key' => '_thumbnail_id' ));
 		    if( $subs->have_posts() ) : while( $subs->have_posts() ) : $subs->the_post(); ?>

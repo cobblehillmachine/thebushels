@@ -14,7 +14,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 /*SPLASH*/
 #splash #nav, #splash #footer-top, #splash #footer-bottom {display:none;}
 .wrap {position:absolute; top:0px; width:100%; text-align:center;}
-#splash-wrap {position:absolute; text-align:center;}
+#splash-wrap {position:absolute; text-align:center; display:none;}
 #splash-cont {margin:auto; border:5px solid #1C1819; width:499px; background:#fff; display:inline-block;}
 #splash-logo {background:url(../images/logo.png); width:509px; height:150px; margin:auto;}
 #splash-form {float:left; margin:10px 0;}
@@ -41,11 +41,11 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #nav .menu-thebushels-container { }
 
 /*MUSIC NAV*/
-#music-nav {float:left; border:6px solid #000; padding:25px 45px 25px 0px; margin-bottom:50px; width:732px;}
-#music-nav .menu {list-style:none; margin:0; padding-left:0px;}
-#music-nav li {float:left; margin-left:100px;}
-#music-nav li a {text-decoration:none; color:#000; text-transform:uppercase; font:normal 22px "proxima-nova-extra-condensed"; font-weight:700;}
-#music-nav li a:hover {text-decoration:underline;}
+#music-nav, .widget_nav_menu {float:left; border:6px solid #000; padding:25px 45px 25px 0px; margin-bottom:50px; width:732px;}
+#music-nav .menu, .widget_nav_menu .menu {list-style:none; margin:0; padding-left:0px;}
+#music-nav a, .widget_nav_menu li {float:left; margin-left:100px;}
+#music-nav a, .widget_nav_menu li a {text-decoration:none; color:#000; text-transform:uppercase; font:normal 22px "proxima-nova-extra-condensed"; font-weight:700;}
+#music-nav a:hover, .widget_nav_menu li a:hover {text-decoration:underline;}
 
 /*FOOTER*/
 #footer-top {float:left; width:100%; height:180px; border-top:6px solid #000;}
@@ -132,10 +132,10 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 
 /*BLOG SIDEBAR*/
 #album-cont {float:right; width:235px;}
-#album-cont .section-title {padding-top:0; padding-left:10px;}
+#album-cont .section-title {padding-top:0; font-size:30px;}
 #album-cont aside {float:left; margin:5px 0 15px 15px;}
-#album-cont #music-nav {width:150px; padding:30px 25px 10px 25px; margin-left:15px;}
-#album-cont #music-nav li {margin:0 0 20px 0;}
+#album-cont .widget_nav_menu {width:150px; padding:30px 25px 10px 25px; margin-left:15px;}
+#album-cont .widget_nav_menu li {margin:0 0 20px 0;}
 
 /*CALENDAR*/
 #calendar #footer-top {margin-top:45px;}

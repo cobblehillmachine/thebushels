@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="mid-cont">
 
 	<div id="main-title">LIVE</div>
-	<?php query_posts(array('post_type' => 'calendar', 'order' => 'ASC' )); ?>
+	<?php query_posts(array('post_type' => 'calendar', 'order' => 'ASC', 'posts_per_page' => 30 )); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="event-post">
 			<div class="date-block"><span class="short-date"><?php the_field('short_date')?></span></div>

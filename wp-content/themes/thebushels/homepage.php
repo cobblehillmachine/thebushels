@@ -21,7 +21,11 @@ get_header(); ?>
 			</div>
 			
 		</div>
-		<div id="music-nav"><?php wp_nav_menu( array( 'menu' => 'wood-and-steel' )); ?></div>
+		<div id="music-nav">
+			<a target="_blank" href="<?php the_field('itunes'); ?>">buy on itunes</a>
+			<a target="_blank" href="<?php the_field('amazon'); ?>">buy on amazon</a>
+			<a target="_blank" href="<?php the_field('spotify'); ?>">listen on spotify</a>
+		</div>
 	</div>
 
 		
