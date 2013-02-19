@@ -75,8 +75,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #signup-cont .buttonContainer input.submit {width:100% !important; font:normal 32px "proxima-nova-extra-condensed" !important; font-weight:700; -webkit-appearance: none;}
 
 /*HOME*/ /*MUSIC*/
-#home .ngg-galleryoverview {float:left; height:600px; margin-top:0; margin-bottom:45px; min-width:1200px;}
-#home .ngg-slideshow {height:600px !important; min-width:1200px;}
+#home .ngg-slideshow {height:600px !important; max-width:1200px; margin:auto;}
 #home .ngg-slideshow img {width:100% !important; height:600px !important; min-width:1200px;}
 #home .slideshowlink {display:none;}
 #home .title, #music .title {color:#1c1819; float:left; width:100%; font:normal 62px "proxima-nova-extra-condensed"; font-weight:700; text-transform:uppercase; margin-bottom:25px;}
@@ -84,6 +83,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #home #text-cont, #music #text-cont {float:left; width:475px; min-height:230px;}
 #home .content-text, #music .content-text {float:left; width:400px; color:#1c1819; font: normal 18px "museo-sans"; font-weight:300; margin:10px 0 0 20px;}
 #home .text strong, #music .text strong {font-weight:bold !important;}
+#home .gallery-wrap {float:left; width:100%; height:600px; background:#000;}
 
 /*MUSIC*/
 #music .title {margin-top:100px;}

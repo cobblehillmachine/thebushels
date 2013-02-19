@@ -5,10 +5,9 @@ Template Name: Homepage
 
 get_header(); ?>
 
-	<?php echo do_shortcode('[nggallery id=1]'); ?>
-	<!-- <div id="home-slide" style="background:<?php//  nggSlideshowWidget(1,780,200); ?>"></div>
-	<?php// if ( dynamic_sidebar('sidebar-2') ) : ?><?php //endif; ?> -->
-		
+	<div class="gallery-wrap"><?php echo do_shortcode('[nggallery id=1]'); ?></div>
+	<!-- <div id="home-slide"><img src="<?php //echo get_template_directory_uri(); ?>/images/home2.jpg"/></div> -->
+<div class="home-wrap" style="float:left; width:100%; background:#fff;">
 	<div class="mid-cont">
 		<div id="home-cont">
 			<div class="title"><?php the_field('title'); ?></div>
@@ -30,6 +29,6 @@ get_header(); ?>
 			<a target="_blank" href="<?php the_field('spotify'); ?>">listen on spotify</a>
 		</div>
 	</div>
-
+</div>
 		
 <?php get_footer(); ?>
