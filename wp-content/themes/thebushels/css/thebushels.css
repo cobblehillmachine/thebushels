@@ -105,7 +105,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 /*GALLERY*/
 #gallery #footer-top {margin-top:130px;}
 #gallery .strip_wrapper {top:680px !important;}
-#gallery .nav-prev, #gallery .nav-next {top:690px !important;}
+#gallery .nav-prev, #gallery .nav-next {top:700px !important;}
 #gallery .pointer, #gallery .panel-overlay, #gallery .overlay-background {display:none;}
 #gallery .img_wrap img {width:60px !important; height:60px !important;}
 #gallery .gallery-wrap {float:left; width:100%; height:650px; background:#000;}
