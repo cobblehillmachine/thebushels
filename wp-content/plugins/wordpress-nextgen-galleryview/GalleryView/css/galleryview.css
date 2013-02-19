@@ -37,7 +37,7 @@
 .gallery { background: transparent; padding: 0; overflow:hidden;}
 
 /* LOADING BOX */
-.loader { background: url(../images/loader.gif) center center no-repeat #ddd; }
+.loader { background: url(../images/ajax-loader.gif) center center no-repeat #000; height:650px !important;}
 
 /* GALLERY PANELS */
 .panel {}
@@ -62,7 +62,7 @@
 .frame {}
 
 /* WRAPPER FOR FILMSTRIP IMAGES */
-.frame .img_wrap { border: 1px solid #aaa; }
+.frame .img_wrap { border: 4px solid #000; }
 
 /* WRAPPER FOR CURRENT FILMSTRIP IMAGE */
 .frame.current .img_wrap { border-color: #000; }

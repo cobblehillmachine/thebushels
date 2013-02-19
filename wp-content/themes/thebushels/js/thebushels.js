@@ -4,7 +4,8 @@ $(document).ready(function() {
 	// });
 	$('#splash-wrap').delay(500).fadeIn('fast');
 	centerItem('#splash-wrap', 509, 368);
-	fullScreen();
+	setGallerySize();
+	//fullScreen();
 	//setImageWidth();
 	$('.blog-post').eq(0).addClass('first').end();
 	$('.event-post').each(function(i) {
@@ -18,12 +19,14 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	//setImageWidth();
-	fullScreen();
+	setGallerySize();
+	//fullScreen();
 	centerItem('#splash-wrap', 509, 368);
 	footerHeight();
 });
 
 $(window).load(function() {
+	setGallerySize();
 	footerHeight();
 });
 
@@ -73,3 +76,13 @@ function setImageWidth() {
 	}
 	
 }
+
+function setGallerySize() {
+	var winW = $(window).width();
+	$('.ngg-slideshow, .ngg-galleryoverview').css({width: winW +'px'});
+}
+
+
+
+
+

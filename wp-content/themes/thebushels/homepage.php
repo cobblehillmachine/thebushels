@@ -6,6 +6,9 @@ Template Name: Homepage
 get_header(); ?>
 
 	<?php echo do_shortcode('[nggallery id=1]'); ?>
+	<!-- <div id="home-slide" style="background:<?php//  nggSlideshowWidget(1,780,200); ?>"></div>
+	<?php// if ( dynamic_sidebar('sidebar-2') ) : ?><?php //endif; ?> -->
+		
 	<div class="mid-cont">
 		<div id="home-cont">
 			<div class="title"><?php the_field('title'); ?></div>
