@@ -94,7 +94,7 @@ form input.submit {float:left; background:none repeat scroll 0 0 #1B1B1B; border
 #music .past-cont {width:745px; height:235px; padding:30px; background:#d5d4d4; float:left; margin-bottom:45px;}
 #music .album-cover {float:left; margin-right:20px;}
 #music .album-cover img {width:235px; height:235px;}
-#music .album-info-cont {float:left; width:245px; font:normal 16px "museo-sans"; font-weight:700; color:#1c1819; margin-right:20px;}
+#music .album-info-cont {float:left; width:245px; font:normal 15px "museo-sans"; font-weight:700; color:#1c1819; margin-right:20px;}
 #music .album-title {font-size:32px; text-transform:uppercase; float:left; width:100%;}
 #music .year {float:left; width:100%; margin-bottom:20px;}
 #music .album-links-cont {width:145px; height:165px; border:6px solid #000; float:left; padding:25px;}
