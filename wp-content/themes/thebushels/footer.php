@@ -13,7 +13,7 @@
 <div id="footer-top">
 	<div class="mid-cont">
 		<div id="signup-cont">
-			<div class="section-title">join our newsletter</div>
+			<div class="section-title">Keep Up With Us</div>
 			<?php if ( dynamic_sidebar('sidebar-3') ) : ?><?php endif; ?>
 		</div>
 	</div>
