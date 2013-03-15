@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<div class="mid-cont">
 
-			<div id="main-title">BLOG</div>
+			<div id="main-title">NEWS</div>
 			<div id="album-cont">
 				<?php if ( dynamic_sidebar('sidebar-1') ) : ?><?php endif; ?>
 			</div>
